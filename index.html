@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Chá Rifa | Arthur Soares Batista</title>
+  <title>Sobre a Rifa | Chá Rifa Arthur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -25,56 +25,23 @@
       position: relative;
       background: url("capa_arthur1.png") no-repeat center top;
       background-size: cover;
-      min-height: 360px;
+      min-height: 260px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      padding-bottom: 25px;
+      padding-bottom: 20px;
     }
 
-    /* TÍTULO SOBRE A CAPA (SEM FUNDO) */
-    .title-overlay {
-      position: absolute;
-      top: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      z-index: 10;
-      pointer-events: none;
-    }
-
-    .titulo-rifa {
-      display: block;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: #00cfff;
-      text-transform: uppercase;
-    }
-
-    .titulo-nome {
-      display: block;
-      font-size: 56px;
-      font-weight: 900;
-      letter-spacing: 4px;
-      color: #ffffff;
-      text-transform: uppercase;
-      text-shadow:
-        0 3px 6px rgba(0,0,0,0.6),
-        0 6px 14px rgba(0,0,0,0.45);
-    }
-
-    /* MENU */
     .menu {
       background: #2fc4bd;
-      padding: 12px 20px;
+      padding: 12px 22px;
       border-radius: 8px;
       display: flex;
       gap: 20px;
     }
 
     .menu a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       font-size: 14px;
@@ -86,62 +53,82 @@
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+    }
+
+    .card {
+      background: #f4fcfc;
+      border-radius: 14px;
+      padding: 40px 30px;
       text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
-    .title {
-      font-size: 28px;
+    .card h1 {
       color: #18b5ad;
-      margin-bottom: 20px;
+      font-size: 30px;
+      margin-bottom: 25px;
     }
 
-    .text {
+    .info {
+      margin-bottom: 25px;
       font-size: 16px;
-      margin-bottom: 18px;
     }
 
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+    .info strong {
+      display: block;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    .premio-img {
+      margin: 30px 0;
+    }
+
+    .premio-img img {
+      max-width: 260px;
+      width: 100%;
+    }
+
+    .sub-title {
+      color: #18b5ad;
+      font-size: 26px;
+      margin: 30px 0 15px;
     }
 
     .btn {
-      background-color: #2fc4bd;
-      color: #ffffff;
-      padding: 14px 26px;
-      border-radius: 8px;
+      display: inline-block;
+      margin-top: 30px;
+      background: #2fc4bd;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 14px;
-      text-transform: uppercase;
+      text-transform: lowercase;
       transition: background 0.3s;
     }
 
     .btn:hover {
-      background-color: #23aaa4;
+      background: #23aaa4;
     }
 
     /* ================= RODAPÉ ================= */
     footer {
       margin-top: 60px;
-      padding: 30px 20px;
-      background-color: #ffffff;
+      padding: 25px;
+      background: #ffffff;
       text-align: center;
       font-size: 14px;
       color: #777;
     }
 
-    /* MOBILE */
     @media (max-width: 600px) {
-      .titulo-rifa {
-        font-size: 22px;
+      .card {
+        padding: 30px 20px;
       }
 
-      .titulo-nome {
-        font-size: 38px;
+      .card h1 {
+        font-size: 24px;
       }
     }
   </style>
@@ -151,70 +138,54 @@
 
   <!-- CAPA -->
   <header class="header">
-
-    <!-- TÍTULO -->
-    <div class="title-overlay">
-      <span class="titulo-rifa">CHÁ DE RIFA</span>
-      <span class="titulo-nome">ARTHUR</span>
-    </div>
-
-    <!-- MENU -->
     <nav class="menu">
-      <a href="https://skardec.github.io/" target="_self">Home</a>
-      <a href="https://skardec.github.io/vendas_rifa/" target="_self">Lista de Presentes</a>
-      <a href="https://skardec.github.io/vendas_rifa/" target="_self">Mural de Recados</a>
-      <a href="https://skardec.github.io/vendas_rifa/" target="_self">Sobre a Rifa</a>
+      <a href="https://skardec.github.io/">Home</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Lista de Presentes</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Mural de Recados</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Sobre a Rifa</a>
     </nav>
-
   </header>
 
   <!-- CONTEÚDO -->
   <main class="container">
-    <h1 class="title">É tempo de muita alegria!!! ✨</h1>
+    <div class="card">
 
-    <p class="text">
-      ✨Meus saudosos cumprimentos a todos!!!✨ É com muito entusiasmo que me apresento a todos vocês.
-      Eu sou o baby Árthur, e eu estou super animado pra conhecer este mundo iluminado e compartilhar
-      minhas boas vindas com vocês, que já estão aí do outro lado.
-    </p>
+      <h1>Sobre a Rifa</h1>
 
-    <p class="text">
-      Por isso eu, a mamãe Kênya e o Papai Sérgio fazemos questão de convidá-los a fazer parte desse
-      momento único e especial para nós, participando do meu Chá Rifa.
-    </p>
+      <div class="info">
+        data do sorteio:
+        <strong>15/03/2026</strong>
+      </div>
 
-    <p class="text">
-      Neste espaço criado com muito amor, teremos o carinho de compartilhar com vocês alguns detalhes
-      dessa fase tão mágica e inesquecível da minha nova vida.
-    </p>
+      <div class="info">
+        1º Prêmio:
+        <strong>Uma cesta de café da manhã</strong>
+      </div>
 
-    <p class="text">
-      Para participar dessa nossa primeira interação com o mundo e ainda concorrer a um prêmio que eu
-      mesmo terei a honra de entregar ao ganhador, basta me presentear! 🎁✨
-    </p>
+      <div class="premio-img">
+        <img src="cesta1.png" alt="Cesta de café da manhã">
+      </div>
 
-    <p class="text">
-      <strong>É muito simples:</strong><br><br>
-      1️⃣ Acesse a lista de presentes<br>
-      2️⃣ Escolha o que desejar<br>
-      3️⃣ Receba seus números da sorte diretamente no e-mail<br><br>
-      Agora vamos só aguardar o dia do sorteio! 🎉
-    </p>
+      <h2 class="sub-title">Como participar?</h2>
 
-    <p class="text">
-      Ah, deixe pra mim baby Árthur aquele recadinho carinhoso no nosso mural.
-      Cada mensagem vai aquecer ainda mais os nossos corações. 🥰
-    </p>
+      <p class="info">
+        Acesse o link abaixo e escolha o presente que deseja comprar.
+        Após a compra, você receberá os seus números da sorte por e-mail.
+      </p>
 
-    <div class="buttons">
-      <a class="btn" href="">Ver Lista de Presentes</a>
-      <a class="btn" href="">Mural de Recados</a>
-      <a class="btn" href="">Sobre a Rifa</a>
+      <p class="info">
+        Aí é só torcer e aguardar o dia do sorteio ;)
+      </p>
+
+      <a class="btn" href="https://skardec.github.io/vendas_rifa/">
+        ver lista de presentes
+      </a>
+
     </div>
   </main>
 
   <footer>
-    © Chá Rifa do Arthur Soares Batista • Feito com amor 💙
+    © Chá Rifa do Arthur Soares Batista • Obrigado por participar 💙
   </footer>
 
 </body>
